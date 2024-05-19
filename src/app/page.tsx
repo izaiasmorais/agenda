@@ -1,5 +1,5 @@
+import { CreateEventModal } from "@/components/create-event-modal";
 import { Event } from "@/components/event";
-import { Button } from "@/components/ui/button";
 
 export default function Home() {
 	return (
@@ -8,9 +8,7 @@ export default function Home() {
 				<div className="flex items-center justify-between">
 					<h1 className="font-semibold text-2xl">Eventos</h1>
 
-					<Button className="py-6 px-4 flex items-center gap-2">
-						Criar Evento
-					</Button>
+					<CreateEventModal />
 				</div>
 
 				<Event />
